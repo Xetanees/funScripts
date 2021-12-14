@@ -1,0 +1,6 @@
+#!/bin/bash
+
+finalName=$(echo $1 | sed 's/png$/jpg/g')
+
+convert $1 $finalName
+jp2a $finalName
